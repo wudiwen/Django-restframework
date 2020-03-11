@@ -20,4 +20,6 @@ from django.conf.urls import url,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^app/', include('app.urls')),
+    url(r'^auth/', include('Auth_and_Permission.urls')),
+
 ]
